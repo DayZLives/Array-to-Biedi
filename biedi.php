@@ -12,7 +12,7 @@
 			_vehicle_".$counter."=objNull;<br>
 		  _this = createVehicle ".$arrayElements[$counter].";<br>
 		  _vehicle_".$counter." = _this;<br>
-		    _this setDir ".$vehicleValues[4].";<br>
+		    _this setDir ".rtrim($vehicleValues[4],']').";<br>
 		  _this setPos ".$vehicleValues[1].",".$vehicleValues[2]."];<br><br><br>";
 		  $counter++;
 		}
